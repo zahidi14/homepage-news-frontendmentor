@@ -1,0 +1,131 @@
+@import url(https://fonts.google.com/specimen/Inter);
+* {
+  font-family: "Karla", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  padding: 10px 40px;
+}
+
+h1 {
+  font-size: 48px;
+  color: hsl(240deg, 100%, 5%);
+}
+
+p {
+  color: hsl(236deg, 13%, 42%);
+}
+
+hr {
+  border-top: 1px solid hsl(36deg, 100%, 99%);
+}
+
+nav {
+  color: hsl(233deg, 8%, 79%);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+nav .menu {
+  display: flex;
+}
+nav .menu ul {
+  display: flex;
+  padding: 15px;
+  margin: 15px;
+  list-style: none;
+}
+nav .menu ul li {
+  margin: 15px;
+  text-decoration: none;
+  color: hsl(233deg, 8%, 79%);
+}
+
+.front {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
+.pic {
+  grid-area: 1/1/2/3;
+}
+@media only screen and (min-width: 377px) {
+  .pic .imgCont #mob {
+    display: none;
+  }
+  .pic .imgCont #desk {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .pic .imgCont #desk {
+    display: none;
+  }
+  .pic .imgCont #mob {
+    display: block;
+  }
+}
+
+.header {
+  grid-area: 2/1/3/2;
+}
+
+.content {
+  grid-area: 2/2/3/3;
+}
+.content button {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  color: hsl(36deg, 100%, 99%);
+  background-color: hsl(5deg, 85%, 63%);
+  bottom: 0;
+}
+.content button:hover {
+  background-color: hsl(240deg, 100%, 5%);
+  cursor: pointer;
+}
+
+.side {
+  grid-area: 1/3/3/4;
+  background-color: hsl(240deg, 100%, 5%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.side h1 {
+  color: hsl(35deg, 77%, 62%);
+}
+.side h3 a {
+  color: hsl(36deg, 100%, 99%);
+  text-decoration: none;
+  font-size: 18px;
+}
+.side h3 a:hover {
+  color: hsl(35deg, 77%, 62%);
+}
+.side p {
+  color: hsl(233deg, 8%, 79%);
+  margin-top: 10px;
+}
+
+.cardCont .--1 {
+  grid-area: 3/1/4/2;
+}
+.cardCont .--2 {
+  grid-area: 3/2/4/3;
+}
+.cardCont .--3 {
+  grid-area: 3/3/4/4;
+}/*# sourceMappingURL=style.css.map */

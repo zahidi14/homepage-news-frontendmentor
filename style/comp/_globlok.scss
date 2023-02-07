@@ -1,0 +1,28 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+*{
+    font-family: 'Karla', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: $FontSize;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+body{
+    padding: 10px 40px;
+}
+
+h1{
+    font-size: 48px;
+    color: $VeryDarkBlue;
+}
+
+p{
+    color: $DarkGrayishBlue;
+}
+
+hr{
+   
+    border-top:1px solid $Off-white;
+}
