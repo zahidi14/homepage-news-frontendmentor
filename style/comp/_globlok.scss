@@ -11,6 +11,9 @@
 }
 body{
     padding: 10px 40px;
+    @include devices('mobile'){
+        padding: 5px 10px;
+    }
 }
 
 h1{
@@ -25,4 +28,17 @@ p{
 hr{
    
     border-top:1px solid $Off-white;
+}
+
+h3{
+   
+}
+a{
+    color: $Off-white;
+    text-decoration: none;
+    font-size: 18px;
+  
+    &:hover{
+        color: $SoftOrange;
+    }
 }
